@@ -1,11 +1,11 @@
-public class Employee {
+public class Student {
     String name;
     void setName(String newName)
     {
-        this.name= newName;
+this.name= newName;
     }
     void getName()
     {
-
+System.out.println(name);
     }
 }
