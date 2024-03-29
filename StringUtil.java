@@ -3,26 +3,26 @@ public class StringUtil {
     {
         return str1+str2;
     }
-        public String add(String ameer, String sameer)
+        public String concatenate(String ameer, String sameer,String pujitha)
         {
-            return ameer+sameer;
+            return ameer+sameer+pujitha;
         }
-        public String toUpperCase(String str, String str1)
+        public String toUpperCase(String str)
         {
-            return str+str1;
+            return str.toUpperCase();
         }
-        public String toLowerCase(String str, String str2)
+        public String toLowerCase(String str)
         {
-            return str+str2;
+            return str.toLowerCase();
         }
 
         public static void main(String args[])
         {
             StringUtil ameer = new StringUtil();
             System.out.println(ameer.concatenate("Pomo","granate"));
-            System.out.println(ameer.add("apple","grapes"));
-            System.out.println(ameer.toLowerCase("set","get"));
-            System.out.println(ameer.toUpperCase("bananas","kiwi"));
+            System.out.println(ameer.concatenate("apple","grapes","banana"));
+            System.out.println(ameer.toLowerCase("GET"));
+            System.out.println(ameer.toUpperCase("bananas"));
 
         }
 }
